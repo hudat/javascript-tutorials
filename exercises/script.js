@@ -1,13 +1,21 @@
 console.log('Hello world!');
 
 //Print out in reverse order, every multiple of 3 between 1 and 200.
-//TODO: Reverse order of print-out
+
+var multiplesOfThree = [];
 
 for (var number = 1; number <= 200; number = number + 1) {
   if (number % 3 == 0) {
-    console.log(number);
+    multiplesOfThree.push(number);
   }
 }
+
+multiplesOfThree = multiplesOfThree.reverse();
+
+for (var n = 0; n < multiplesOfThree.length; n = n + 1) {
+  console.log(multiplesOfThree[n])
+}
+
 
 //Print the numbers from 1 to 100.
 //For multiples of three print "Fizz" instead of the number.
@@ -32,7 +40,8 @@ for (var i = 1; i <= 100; i++) {
 	}
 }
 
-/*var i = 1,
+/*
+var i = 1,
     f = 'Fizz',
     b = 'Buzz',
     out = '';
