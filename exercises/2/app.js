@@ -1,4 +1,3 @@
-
 //Print the numbers from 1 to 100.
 //For multiples of three print "Fizz" instead of the number.
 //For the multiples of five print "Buzz".
@@ -21,15 +20,3 @@ for (var i = 1; i <= 100; i++) {
 		console.log(i);
 	}
 }
-
-/*
-var i = 1,
-    f = 'Fizz',
-    b = 'Buzz',
-    out = '';
-
-for (; i <= 100; i++) {
-	out = !(i % 3) ?  !(i % 5)? f+b : f : !(i % 5)? b : i;
-	console.log(out);
-}
-*/
